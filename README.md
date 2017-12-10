@@ -1,6 +1,6 @@
 # portfolio01 - GURO-Guro  District Office
 
-portfolio01 : Renewed main page of GURO-Guro  District Office
+Renewed main page of GURO-Guro  District Office
 
  * Ctrl+S / Cmd+S to save the file
  * Ctrl+Shift+S / Cmd+Shift+S to choose to save as Markdown or HTML
