@@ -1,4 +1,4 @@
-# portfolio01 - GURO-Guro  District Office
+# portfolio01 : GURO-Guro  District Office
 
 Renewed main page of GURO-Guro  District Office
 
