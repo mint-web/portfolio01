@@ -108,6 +108,11 @@ body{position:relative;font-size:14px;font-family:NanumS, "Malgun Gothic", "맑�
     .search_wrap {width: 100%;float: none}
     .search_wrap .search_btn {position: absolute;right: 10px;top: 30px;width: 44px;height: 44px;border-radius: 44px;line-height: 44px;z-index: 31}
     .search_wrap .search_btn em {height: 44px}
+    .search_box {top: 110px}
+    .search_box .inner_box {width: 100%;padding: 50px 4%}
+    .search_box .inner_box h2 {width: 15%;padding-top: 12px;font-size: 24px}
+    .search_box .inner_box .search_input {width: 70%;font-size: 16px}
+    .search_box .inner_box .search_submit {padding: 0 20px;font-size: 16px}
     .mobile_top {display: block;height: 50px}
     .mobile_top span {line-height: 50px;padding-left: 15px;font-size: 18px;color: #f9f427;font-weight: 600}
     .mobile_top a {float: right;display: block;width: 28px;height: 28px;background: url(../images/gnb_close.png) no-repeat;background-size: 28px;margin-top: 12px;padding-right: 12px;text-indent: -999px}
@@ -144,6 +149,7 @@ body{position:relative;font-size:14px;font-family:NanumS, "Malgun Gothic", "맑�
 
 /* 640px 미디어 쿼리 */
 @media only screen and (max-width:640px) {
+    .search_box .inner_box h2 {display: none}
     .footer_banner .site_link {width: 50%}
     .footer_banner .site_link button {height: 54px}
     .footer_banner .obj {bottom: 54px}
