@@ -58,18 +58,16 @@ $(function() {
     });
     
     // notice tabs
-	$(".board > ul > li > button").parents(".board").find(">ul>li").children(".more").show();
-	$(".tab_btn").children(".more").show();	
 	$(".board > ul > li > button").on("click",function(){
-		$(this).parents(".board").find(">ul>li").removeClass("active").children(".more").hide();
-		$(this).siblings(".more").show().parents().addClass("active");	
+		$(this).parents('.board').find('>ul>li').removeClass('active')
+		$(this).parents().addClass('active');	
 		return false;
 	});
 
     //accodion
 	$(".accordion > ul > li > button").on("click",function(){
-		$(".accordion > ul > li > button").removeClass("active").next().slideUp();
-		$(this).addClass("active").next().slideDown();
+		$('.accordion > ul > li > button').removeClass('active').next().slideUp();
+		$(this).addClass('active').next().slideDown();
 		return false;
     });
 });
