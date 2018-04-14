@@ -1,44 +1,21 @@
-    
-var windowWidth = $(window).width();
-  $(window).resize(function() {
-    if( windowWidth != $(window).width() ) {
-      if ( $(window).width() > 1024){
-        pc_menu();
-       
-        return false;
-      } else {
-        mobile_menu();
-      }
-    }
-    windowWidth = $(window).width();
-  });
-
-
-        
+          
 $(function() {
   //pc lnb navigation
-    pc_menu();
-    function pc_menu(){
-      $(".top_menu > li > a").on("mouseenter focus", function(){
+       $(".top_menu > li > a").on("mouseenter focus", function(){
           $(".depth2_sub").hide();
           $(this).parent(".depth1").find(".depth2_sub").show();
       });
       $(".top_menu").on("mouseleave focus", function(){
           $(this).find(".depth2_sub").hide();
-
       });
-    };
+
   //mobile lnb navigation
-   mobile_menu(); 
-   function mobile_menu(){  
       $(".top_menu > li").on("click", function(){
           event.preventDefault();
           $(".top_menu > li").removeClass("on").next("div").hide();
           $(this).toggleClass("on").next("div").show();
       });
-   };
-    
-  //mobile button click
+ //mobile button click
     $(".mobile_btn > a").on("click", function(){
           $(".menu_wrap").show();
           return false;
