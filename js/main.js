@@ -66,9 +66,9 @@ $(function() {
 
     //accodion
 	$(".accordion > ul > li > button").on("click",function(){
-		$(this).parent('li').removeClass('on');
-                $('.accordion > ul > li > button').next().slideUp();
-                $(this).addClass('on');
-                $(this).next().slideDown();
+		$('.accordion > ul > li').find('ul').slideUp();
+                $('.accordion > ul > li').removeClass('on'); 
+                $(this).next('ul').slideDown();
+                $(this).parent('li').addClass('on');
     });
 });
