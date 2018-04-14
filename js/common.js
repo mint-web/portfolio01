@@ -33,14 +33,14 @@ $(function() {
    function mobile_menu(){  
       $(".top_menu > li").on("click", function(){
           event.preventDefault();
-          $(".top_menu > li").not(this).removeClass("on").next("div").hide();
-          $(this).toggleClass("on").next("div").css({display:"block"}).show();
+          $(".top_menu > li").removeClass("on").next("div").hide();
+          $(this).toggleClass("on").next("div").show();
       });
    };
     
   //mobile button click
     $(".mobile_btn > a").on("click", function(){
-          $(".menu_wrap").css({display:"block"}).show(2000);
+          $(".menu_wrap").show();
           return false;
       });
     $(".mobile_top > a").on("click", function(){
