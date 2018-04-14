@@ -59,9 +59,11 @@ $(function() {
     
     // notice tabs
 	$(".board > ul > li > button").on("click",function(){
-		$(this).parents('.board').find('>ul>li').removeClass('active')
-		$(this).parents().addClass('active');	
-		return false;
+		$('.board > ul > li').find('.board_content').hide();
+                $('.board > ul > li').removeClass('active'); 
+  
+                $(this).next('.board_content').show();
+                $(this).parent('li').addClass('active');
 	});
 
     //accodion
