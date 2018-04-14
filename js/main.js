@@ -68,14 +68,8 @@ $(function() {
 
     //accodion
 	$(".accordion > ul > li > button").on("click",function(){
-			if( $(this).hasClass('on') ){
-                
-            }
-			else{
-				$(".accordion > ul > li > button").removeClass('on').next().slideUp();
-				$(this).addClass('on').next().slideDown();
-			}
-			
-			return false;
+		$(".accordion > ul > li > button").removeClass("active").next().slideUp();
+		$(this).addClass("active").next().slideDown();
+		return false;
     });
 });
